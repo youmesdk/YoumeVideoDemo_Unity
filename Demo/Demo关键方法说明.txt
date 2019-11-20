@@ -1,0 +1,22 @@
+视频场景：videoMode
+视频接入示例类：Scripts/VideoMode.cs
+
+ 1. void Start ()
+  设置事件回调和初始化sdk
+
+2. public void OnClickButtonJoin()
+  进入聊天频道，并绑定视频渲染相关组件
+
+3. public void UserJoin ( string userId)
+  把收到其他用户的视频流显示到界面上
+
+4. public void ControlCamera()
+  控制自己的摄像头开关
+
+5. void OnEvent (string strParam)
+ 事件通知，关键事件：
+ YouMe.YouMeEvent.YOUME_EVENT_JOIN_OK:                //自己进入聊天频道成功
+ YouMe.YouMeEvent.YOUME_EVENT_OTHERS_VIDEO_ON:        //收到其他用户的视频流通知
+ YouMe.YouMeEvent.YOUME_EVENT_OTHERS_VIDEO_SHUT_DOWN: //收到其他用户的视频流关闭的通知，暂时未实现
+ YouMe.YouMeEvent.YOUME_EVENT_OTHERS_VIDEO_INPUT_START ///< 其他用户视频输入开始（内部采集下开启摄像头/外部输入下开始input）
+ YouMe.YouMeEvent.YOUME_EVENT_OTHERS_VIDEO_INPUT_STOP ///< 其他用户视频输入停止（内部采集下停止摄像头/外部输入下停止input）

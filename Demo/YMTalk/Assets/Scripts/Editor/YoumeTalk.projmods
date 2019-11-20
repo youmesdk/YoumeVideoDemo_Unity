@@ -1,0 +1,13 @@
+{
+  "group": "YoumeTalk",
+  "patches": [],
+  "libs": ["libz.1.2.5.tbd","libresolv.9.dylib","libsqlite3.0.dylib"],
+  "librarysearchpaths": [],
+  "frameworks": ["CoreTelephony.framework","VideoToolbox.framework","AudioToolbox.framework","AVKit.framework","CoreVideo.framework","CoreFoundation.framework","AVFoundation.framework","SystemConfiguration.framework","CFNetwork.framework"]
+  "headerpaths": [],
+  "files": [],
+  "folders": [],	
+  "excludes": ["^.*\\.meta$", "^.*\\.mdown^", "^.*\\.pdf$"],
+  "compiler_flags":[],
+  "linker_flags": []
+}
